@@ -3,116 +3,93 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kaido Propreté – Nettoyage professionnel à Bourg‑en‑Bresse</title>
-  <meta name="description" content="Kaido Propreté : bureaux, parties communes, vitreries. Tarifs attractifs & service pro. Devis gratuit sous 24h." />
+  <title>Kaido Propreté – L’excellence du nettoyage professionnel</title>
+  <meta name="description" content="Kaido Propreté : L’excellence du nettoyage professionnel. Bureaux, parties communes et entre deux locations à Bourg‑en‑Bresse. Devis gratuit sous 24h." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --bg:#0c0f14; --panel:#0f131a; --panel-2:#121824; --stroke:#1e2533;
-      --text:#e7e9ee; --muted:#9aa3b2; --brand:#e8c24f; --brand-2:#9d7a2a; --ok:#22c55e;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;height:100%;scroll-behavior:smooth}
-    body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(1000px 500px at 80% -20%,rgba(232,194,79,.08),transparent 60%),linear-gradient(180deg,#0a0d12,#0c0f14 60%,#0a0d12);color:var(--text)}
+    :root{--bg:#0b0f14;--panel:#0f131a;--panel-2:#121824;--stroke:#1e2533;--text:#e7e9ee;--muted:#9aa3b2;--brand:#e8c24f;--ok:#22c55e;--warn:#f59e0b}
+    *{box-sizing:border-box} html,body{margin:0;scroll-behavior:smooth}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(1000px 500px at 80% -20%,rgba(232,194,79,.06),transparent 60%),linear-gradient(180deg,#0a0d12,#0c0f14 60%,#0a0d12);color:var(--text)}
     a{color:inherit;text-decoration:none}
-    img{max-width:100%;display:block}
-    .container{max-width:1120px;margin:0 auto;padding:0 24px}
-
+    .container{max-width:1140px;margin:0 auto;padding:0 24px}
     /* Header */
-    header{position:sticky;top:0;z-index:50;background:rgba(12,15,20,.6);backdrop-filter:blur(12px);border-bottom:1px solid var(--stroke);transition:box-shadow .2s ease}
-    header.scrolled{box-shadow:0 10px 30px rgba(0,0,0,.25)}
-    nav{display:flex;align-items:center;justify-content:space-between;height:68px}
-    .logo{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.3px}
-    .logo-mark{width:34px;height:34px;border-radius:10px;background:radial-gradient(circle at 30% 30%, #fff 0, #f0e7c2 16%, #e8c24f 40%, #8c6a1f 100%);box-shadow:0 0 28px rgba(232,194,79,.35)}
-    .navlinks{display:flex;gap:18px}
-    .navlinks a{padding:8px 12px;border-radius:10px;color:var(--muted);font-weight:600}
-    .navlinks a.active,.navlinks a:hover{background:#171c26;color:var(--text)}
-
+    header{position:sticky;top:0;z-index:40;background:rgba(12,15,20,.65);backdrop-filter:blur(12px);border-bottom:1px solid var(--stroke)}
+    nav{display:flex;justify-content:space-between;align-items:center;height:72px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.3px}
+    .logo{width:36px;height:36px}
+    .nav a{color:var(--muted);padding:8px 12px;border-radius:10px}
+    .nav a:hover,.nav a.active{background:#171c26;color:var(--text)}
     /* Hero */
-    .hero{position:relative;overflow:hidden}
-    .hero-wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:60px 0}
-    .badge{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--stroke);background:linear-gradient(180deg,#0f131a,#0b0f15);padding:6px 12px;border-radius:999px;color:#cdd6e3;font-size:12px;margin-bottom:14px}
-    .headline{font-family:"Playfair Display",serif;font-weight:700;font-size:48px;line-height:1.06;margin:0 0 10px;letter-spacing:.1px}
-    .sub{color:var(--muted);font-size:18px;margin:0 0 18px}
-    .cta{display:flex;gap:12px;flex-wrap:wrap}
-    .btn{padding:12px 16px;border-radius:14px;font-weight:700;border:1px solid var(--stroke);background:#121824}
-    .btn-primary{background:linear-gradient(180deg,#f0e7c2,#e8c24f);color:#1a1a1a;border:none;box-shadow:0 12px 30px rgba(232,194,79,.28)}
-    .kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
-    .kpi .card{padding:14px;border-radius:14px;border:1px solid var(--stroke);background:linear-gradient(180deg,#121824,#0f131a)}
-    .count{font-weight:800;font-size:26px}
-
-    .hero .panel{background:linear-gradient(180deg,#121824,#0c1118);border:1px solid var(--stroke);border-radius:18px;padding:16px}
-    .hero .panel img{border-radius:14px;border:1px solid var(--stroke);box-shadow:0 10px 35px rgba(0,0,0,.25), 0 0 25px rgba(232,194,79,.22)}
-
+    .hero{padding:56px 0 40px}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:38px;align-items:center}
+    h1{font-family:'Playfair Display',serif;font-size:48px;margin:0 0 6px}
+    .tagline{font-size:20px;color:#e7e9ee;margin:0 0 10px;font-weight:700}
+    .sub{color:var(--muted);line-height:1.7}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+    .btn{display:inline-block;padding:12px 16px;border-radius:14px;border:1px solid var(--stroke);background:#121824;font-weight:700}
+    .btn-primary{background:linear-gradient(180deg,#f0e7c2,#e8c24f);color:#1a1a1a;border:none}
+    .panel{border:1px solid var(--stroke);border-radius:18px;background:linear-gradient(180deg,#121824,#0f131a);padding:14px}
+    .panel img{width:100%;border-radius:12px;border:1px solid var(--stroke);box-shadow:0 10px 32px rgba(0,0,0,.28),0 0 22px rgba(232,194,79,.22)}
+    /* Tiny cleaning animation */
+    .anim{position:relative;aspect-ratio:16/9;background:linear-gradient(180deg,#0f131a,#0b0f14);border:1px solid var(--stroke);border-radius:12px;overflow:hidden}
+    .sparkle{position:absolute;width:18px;height:18px;border-radius:50%;box-shadow:0 0 18px rgba(232,194,79,.45);background:#f2e7b7;animation:spark 2.4s infinite ease-in-out}
+    .sparkle:nth-child(2){left:35%;top:35%;animation-delay:.3s}
+    .sparkle:nth-child(3){left:60%;top:55%;animation-delay:.9s}
+    .sparkle:nth-child(4){left:80%;top:25%;animation-delay:1.4s}
+    @keyframes spark{0%{transform:scale(.6);opacity:.7}50%{transform:scale(1.2);opacity:1}100%{transform:scale(.6);opacity:.6}}
+    .wipe{position:absolute;left:-20%;top:10%;width:50%;height:4px;background:linear-gradient(90deg,transparent,#e8c24f,transparent);filter:blur(1px);transform:rotate(12deg);animation:wipe 4.6s infinite linear}
+    @keyframes wipe{0%{left:-50%}100%{left:130%}}
     /* Sections */
-    section{padding:60px 0}
+    section{padding:54px 0}
     h2{font-size:28px;margin:0 0 8px}
-    p{color:var(--muted);line-height:1.7}
+    p{color:var(--muted);margin:0;line-height:1.7}
     .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
     .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-
-    .card{background:linear-gradient(180deg,#121824,#0f131a);border:1px solid var(--stroke);border-radius:18px;padding:18px}
-    .card.lift{transition:transform .2s ease, box-shadow .2s ease}
-    .card.lift:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.25)}
-
-    /* Services icons */
-    .svc h3{margin:6px 0 8px;font-size:18px}
-    .svc p{margin:0}
-
-    /* Prices */
-    .pricing{--gap:18px}
-    .pricing .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap)}
-    .price{font-size:34px;font-weight:800}
-    .tag{display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid var(--stroke);font-size:12px;color:#cdd6e3}
-    .features{margin:12px 0 0;padding:0 0 0 18px;color:#cdd6e3;line-height:1.9}
-
-    /* Reviews carousel */
-    .carousel{position:relative;overflow:hidden}
-    .track{display:flex;gap:18px;transition:transform .5s ease}
-    .review{min-width:calc(50% - 9px)}
-    .review .quote{font-style:italic;color:#e7eef9}
-    .dots{display:flex;gap:8px;justify-content:center;margin-top:12px}
-    .dot{width:8px;height:8px;border-radius:999px;background:#2a3242}
-    .dot.active{background:var(--brand)}
-
-    /* FAQ */
-    .faq details{border:1px solid var(--stroke);border-radius:14px;padding:14px;background:#0f131a}
-    .faq details+details{margin-top:10px}
-    .faq summary{cursor:pointer;font-weight:600}
-
+    .card{border:1px solid var(--stroke);border-radius:18px;background:linear-gradient(180deg,#121824,#0f131a);padding:18px}
+    .card h3{margin:6px 0 8px;font-size:18px}
+    /* Satisfaction meter */
+    .meter{height:14px;background:#1a2230;border:1px solid var(--stroke);border-radius:999px;overflow:hidden}
+    .meter > div{height:100%;background:linear-gradient(90deg,#f0e7c2,#e8c24f);width:0%}
+    .meter-label{display:flex;justify-content:space-between;color:#cbd5e1;font-size:14px;margin-top:6px}
+    /* Reviews */
+    .review-item{border-top:1px solid var(--stroke);padding-top:12px;margin-top:12px}
+    .muted{color:#9aa3b2}
+    .stars{color:#e8c24f;font-size:14px}
+    .note{font-size:13px;color:#8ca3c2}
     /* Contact */
-    .contact .grid-2{align-items:start}
-    .input{padding:12px 14px;border-radius:12px;border:1px solid var(--stroke);background:#0f1219;color:#e5e7eb;width:100%}
+    .input{padding:12px 14px;border-radius:12px;border:1px solid var(--stroke);background:#0f1219;color:#e7e9ee;width:100%}
     textarea.input{min-height:120px}
-    .ok{color:#22c55e;font-weight:700}
-
     footer{border-top:1px solid var(--stroke);padding:26px 0;color:#94a3b8}
-
-    /* Reveal on scroll */
-    .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease, transform .6s ease}
-    .reveal.visible{opacity:1;transform:translateY(0)}
-
-    @media (max-width: 980px){
-      .hero-wrap{grid-template-columns:1fr}
-      .grid-3{grid-template-columns:1fr}
-      .grid-2{grid-template-columns:1fr}
-      .review{min-width:100%}
-      .pricing .cards{grid-template-columns:1fr}
-    }
+    @media(max-width:980px){.hero-grid,.grid-3,.grid-2{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-  <header id="top">
+  <!-- HEADER -->
+  <header>
     <div class="container">
       <nav>
-        <div class="logo"><div class="logo-mark" aria-hidden></div><span>Kaido Propreté</span></div>
-        <div class="navlinks">
+        <div class="brand">
+          <!-- LOGO (remplaçable par logo.png) -->
+          <svg class="logo" viewBox="0 0 64 64" aria-label="Logo Kaido Propreté" role="img">
+            <defs>
+              <radialGradient id="g" cx="30%" cy="30%">
+                <stop offset="0%" stop-color="#ffffff"/>
+                <stop offset="18%" stop-color="#f0e7c2"/>
+                <stop offset="45%" stop-color="#e8c24f"/>
+                <stop offset="100%" stop-color="#8c6a1f"/>
+              </radialGradient>
+            </defs>
+            <rect x="8" y="8" width="48" height="48" rx="14" fill="url(#g)"/>
+            <text x="50%" y="58%" text-anchor="middle" font-size="26" font-weight="800" fill="#111">KP</text>
+          </svg>
+          <span>Kaido Propreté</span>
+        </div>
+        <div class="nav">
           <a href="#services">Prestations</a>
-          <a href="#tarifs">Tarifs</a>
-          <a href="#avis">Avis</a>
-          <a href="#faq">FAQ</a>
+          <a href="#satisfaction">Satisfaction</a>
+          <a href="#avis">Avis & Commentaires</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -122,23 +99,24 @@
   <main>
     <!-- HERO -->
     <section class="hero">
-      <div class="container hero-wrap">
+      <div class="container hero-grid">
         <div>
-          <div class="badge">✨ Nettoyage pro dans l’Ain • Devis gratuit</div>
-          <h1 class="headline">Propreté d’exception pour vos bureaux & immeubles</h1>
-          <p class="sub">Entretien des parties communes, bureaux et vitreries. Intervention rapide à Bourg‑en‑Bresse et alentours. Passages ponctuels ou contrats réguliers.</p>
+          <h1>Kaido Propreté</h1>
+          <p class="tagline">L’excellence du nettoyage professionnel.</p>
+          <p class="sub">Bureaux • Parties communes • Entre deux locations — interventions à Bourg‑en‑Bresse et alentours. Devis gratuit sous 24 h.</p>
           <div class="cta">
             <a class="btn btn-primary" href="#contact">Demander un devis</a>
-            <a class="btn" href="#services">Voir les prestations</a>
-          </div>
-          <div class="kpi">
-            <div class="card reveal"><div class="count" data-count="24">0</div><div class="muted">h devis max</div></div>
-            <div class="card reveal"><div class="count" data-count="99">0%</div><div class="muted">clients satisfaits</div></div>
-            <div class="card reveal"><div class="count" data-count="79">0€</div><div class="muted">forfait bureaux</div></div>
+            <a class="btn" href="tel:+33768131483">Appeler 07 68 13 14 83</a>
           </div>
         </div>
-        <div class="panel reveal">
-          <img src="banner.png" alt="Bannière Kaido Propreté" />
+        <div class="panel">
+          <!-- Image bannière + mini animation -->
+          <div class="anim" aria-hidden="true">
+            <div class="sparkle" style="left:15%;top:20%"></div>
+            <div class="sparkle"></div><div class="sparkle"></div><div class="sparkle"></div>
+            <div class="wipe"></div>
+            <img src="banner.png" alt="Bannière Kaido Propreté" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.75;mix-blend:screen;border:0">
+          </div>
         </div>
       </div>
     </section>
@@ -146,122 +124,86 @@
     <!-- SERVICES -->
     <section id="services">
       <div class="container">
-        <h2 class="reveal">Prestations</h2>
-        <p class="reveal">Des services pensés pour les pros et les copropriétés, avec un standard qualité constant.</p>
+        <h2>Prestations</h2>
+        <p class="muted">Des services adaptés aux pros, copropriétés et bailleurs.</p>
         <div class="grid-3" style="margin-top:16px">
-          <div class="card lift svc reveal">
-            <h3>🧹 Bureaux</h3>
-            <p>Dépoussiérage, désinfection points de contact, sols, sanitaires, vidage des corbeilles.</p>
+          <div class="card">
+            <h3>🧹 Nettoyage des bureaux</h3>
+            <p>Dépoussiérage, désinfection des points de contact, sols, sanitaires, vidage des corbeilles.</p>
           </div>
-          <div class="card lift svc reveal">
+          <div class="card">
             <h3>🏢 Parties communes</h3>
-            <p>Hall, escaliers, ascenseurs, boîtes aux lettres, enlèvement d’affiches.</p>
+            <p>Hall, escaliers, ascenseurs, boîtes aux lettres, enlèvement d’affiches et toiles d’araignée.</p>
           </div>
-          <div class="card lift svc reveal">
-            <h3>🪟 Vitreries</h3>
-            <p>Vitrines, fenêtres, baies vitrées, finitions soignées en intérieur/extérieur.</p>
+          <div class="card">
+            <h3>🏠 Entre deux locations</h3>
+            <p>Remise en état complète entre sortants/entrants : cuisine, sanitaires, vitres, dépoussiérage.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PRICING -->
-    <section id="tarifs" class="pricing">
+    <!-- SATISFACTION -->
+    <section id="satisfaction">
       <div class="container">
-        <h2 class="reveal">Tarifs attractifs & transparents</h2>
-        <p class="reveal">Des forfaits pensés pour rester compétitifs tout en assurant une prestation rentable et durable.</p>
-        <div class="cards" style="margin-top:16px">
-          <div class="card lift reveal">
-            <div class="tag">Bureaux ≤ 80 m²</div>
-            <div class="price" aria-label="Tarif bureaux">79 € HT</div>
-            <ul class="features">
-              <li>Passage unique ou mensuel</li>
-              <li>Produits & matériel pro inclus</li>
-              <li>Rapport photo sur demande</li>
-            </ul>
+        <h2>Niveau de satisfaction</h2>
+        <p class="muted">Objectif : rester entre <strong>80% et 90%</strong> pour garantir qualité & amélioration continue.</p>
+        <div class="card" style="margin-top:16px">
+          <div class="meter" aria-label="Indicateur de satisfaction" title="Taux de satisfaction basé sur les avis">
+            <div id="meterbar" style="width:0%"></div>
           </div>
-          <div class="card lift reveal">
-            <div class="tag">Parties communes ≤ 4 étages</div>
-            <div class="price" aria-label="Tarif parties communes">99 € HT</div>
-            <ul class="features">
-              <li>Hall, escaliers, ascenseur</li>
-              <li>Contrat régulier possible</li>
-              <li>Suivi qualité mensuel</li>
-            </ul>
-          </div>
-          <div class="card lift reveal">
-            <div class="tag">Vitreries</div>
-            <div class="price" aria-label="Tarif vitreries">39 € HT</div>
-            <ul class="features">
-              <li>Selon nombre et dimensions</li>
-              <li>Intérieur / extérieur</li>
-              <li>Finitions soignées</li>
-            </ul>
-          </div>
+          <div class="meter-label"><span>Moyenne actuelle</span><span id="meterlabel">—</span></div>
+          <p class="note">La moyenne est calculée sur les avis publiés ci‑dessous. Les nouveaux avis mettent à jour cet indicateur.</p>
         </div>
-        <p style="margin-top:10px;font-size:14px;color:#94a3b8">*Tarifs HT indicatifs. Devis gratuit sous 24 h. Attestations & facture fournies.</p>
       </div>
     </section>
 
-    <!-- REVIEWS / CAROUSEL -->
+    <!-- REVIEWS & PUBLIC COMMENTS -->
     <section id="avis">
       <div class="container">
-        <h2 class="reveal">Ce que disent nos clients</h2>
-        <div class="carousel card reveal" style="margin-top:16px">
-          <div class="track" id="track">
-            <div class="review card" style="min-width:100%">
-              <p class="quote">« Service impeccable, passages à l’heure et communication fluide. »</p>
-              <div class="author" style="color:#9aa3b2">— Claire, syndicat de copropriété</div>
-            </div>
-            <div class="review card" style="min-width:100%">
-              <p class="quote">« Très pro pour l’entretien hebdo de nos bureaux, tarifs corrects. »</p>
-              <div class="author" style="color:#9aa3b2">— Marc, PME locale</div>
-            </div>
-            <div class="review card" style="min-width:100%">
-              <p class="quote">« Net et sans reproche : vitres nickel, rapport photo à l’appui. »</p>
-              <div class="author" style="color:#9aa3b2">— Sarah, boutique centre-ville</div>
-            </div>
-          </div>
-        </div>
-        <div class="dots" id="dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="faq">
-      <div class="container">
-        <h2 class="reveal">Questions fréquentes</h2>
+        <h2>Avis & commentaires</h2>
         <div class="grid-2" style="margin-top:16px">
-          <div>
-            <details class="reveal"><summary>Intervenez‑vous en dehors de Bourg‑en‑Bresse ?</summary><p>Oui, nous couvrons l’Ain et les alentours selon le devis (temps de trajet inclus).</p></details>
-            <details class="reveal"><summary>Fournissez‑vous les produits et le matériel ?</summary><p>Oui, tout est inclus : produits pro, consommables sur option.</p></details>
-            <details class="reveal"><summary>Proposez‑vous des contrats réguliers ?</summary><p>Oui, passages hebdomadaires ou mensuels, avec suivi qualité.</p></details>
+          <div class="card">
+            <h3 style="margin:0 0 6px">Témoignages</h3>
+            <div id="reviews"></div>
           </div>
-          <div>
-            <details class="reveal"><summary>Comment obtenir un devis ?</summary><p>Remplissez le formulaire ci‑dessous : réponse sous 24 h (jours ouvrés).</p></details>
-            <details class="reveal"><summary>Êtes‑vous assurés ?</summary><p>Oui, RC pro et attestation sur demande.</p></details>
-            <details class="reveal"><summary>Facturez‑vous la désinfection ?</summary><p>Oui, en option : zones communes, poignées, sanitaires, postes sensibles.</p></details>
+          <div class="card">
+            <h3 style="margin:0 0 6px">Laisser un commentaire</h3>
+            <form id="reviewForm">
+              <input class="input" name="name" placeholder="Votre nom" required />
+              <select class="input" name="rating" required>
+                <option value="" disabled selected>Note (1 à 5 étoiles)</option>
+                <option value="5">★★★★★ – Excellent</option>
+                <option value="4">★★★★☆ – Très bien</option>
+                <option value="3">★★★☆☆ – Bien</option>
+                <option value="2">★★☆☆☆ – Moyen</option>
+                <option value="1">★☆☆☆☆ – À améliorer</option>
+              </select>
+              <textarea class="input" name="comment" placeholder="Votre message pour les futurs clients…" required></textarea>
+              <button class="btn btn-primary" type="submit">Publier</button>
+              <p class="note" style="margin-top:8px">Les avis sont stockés localement (<em>localStorage</em>) pour compatibilité GitHub Pages. Pour un affichage global, on peut brancher Google Forms / Netlify / Formspree.</p>
+            </form>
           </div>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="contact">
+    <section id="contact">
       <div class="container">
-        <h2 class="reveal">Contact</h2>
-        <div class="grid-2" style="margin-top:16px">
-          <div class="card reveal">
+        <h2>Contact</h2>
+        <div class="grid-2" style="margin-top:16px;align-items:start">
+          <div class="card">
             <form id="contactForm">
               <input class="input" name="name" placeholder="Votre nom" required />
               <input class="input" name="email" type="email" placeholder="Votre email" required />
               <input class="input" name="phone" type="tel" placeholder="Téléphone (optionnel)" />
-              <textarea class="input" name="message" placeholder="Décrivez votre besoin…" required></textarea>
+              <textarea class="input" name="message" placeholder="Décrivez votre besoin (surface, fréquence, accès…)" required></textarea>
               <button class="btn btn-primary" type="submit">Envoyer la demande</button>
-              <div id="sent" style="margin-top:8px;display:none" class="ok">Votre messagerie va s’ouvrir avec le message pré‑rempli ✅</div>
+              <p id="sent" style="display:none;color:var(--ok);font-weight:700;margin-top:8px">Votre messagerie s’ouvre avec le message pré‑rempli ✅</p>
             </form>
           </div>
-          <div class="card reveal">
+          <div class="card">
             <h3 style="margin:0 0 8px">Coordonnées</h3>
             <p style="margin:0 0 10px">Kaido Propreté<br/>Bourg‑en‑Bresse, Ain</p>
             <p style="margin:0 0 10px">Tél. : <a href="tel:+33768131483">07 68 13 14 83</a><br/>Email : <a href="mailto:kaidoproprete@kaido-pro.com">kaidoproprete@kaido-pro.com</a></p>
@@ -274,65 +216,92 @@
   <footer>
     <div class="container" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
       <div>© <span id="year"></span> Kaido Propreté. Tous droits réservés.</div>
-      <div><a href="#top">Haut de page ↑</a></div>
+      <div><a href="#services">Prestations</a> · <a href="#avis">Commentaires</a> · <a href="#contact">Contact</a></div>
     </div>
   </footer>
 
   <script>
-    // Sticky header shadow
-    const header=document.querySelector('header');
-    const onScroll=()=>header.classList.toggle('scrolled', window.scrollY>10);
-    document.addEventListener('scroll', onScroll); onScroll();
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Nav active link
-    const sections=[...document.querySelectorAll('main section')];
-    const links=[...document.querySelectorAll('.navlinks a')];
-    const spy=new IntersectionObserver((entries)=>{
-      entries.forEach(e=>{ if(e.isIntersecting){
-        links.forEach(a=>a.classList.remove('active'));
-        const id = '#' + e.target.id; const link = links.find(a=>a.getAttribute('href')===id);
-        if(link) link.classList.add('active');
-      }})
-    },{rootMargin:'-50% 0px -45% 0px', threshold:0});
-    sections.forEach(s=>s.id && spy.observe(s));
+    // ---------- Initial demo reviews (pour viser ~85%) ----------
+    const seed = [
+      {name:'Claire', rating:5, comment:'Passages à l’heure, résultat impeccable.'},
+      {name:'Marc', rating:4, comment:'Très pro pour nos bureaux, communication nickel.'},
+      {name:'Sarah', rating:4, comment:'Vitreries nettes, finitions soignées.'},
+      {name:'Amina', rating:5, comment:'Nettoyage entre locations au top, rapide et efficace.'}
+    ];
 
-    // Reveal on scroll
-    const revObs=new IntersectionObserver((es)=>{
-      es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); revObs.unobserve(e.target);} })
-    },{threshold:.16});
-    document.querySelectorAll('.reveal').forEach(el=>revObs.observe(el));
+    const loadReviews = () => {
+      let data = JSON.parse(localStorage.getItem('kp_reviews') || 'null');
+      if(!data){ data = seed; localStorage.setItem('kp_reviews', JSON.stringify(data)); }
+      return data;
+    };
+    const saveReviews = (data) => localStorage.setItem('kp_reviews', JSON.stringify(data));
 
-    // Counters
-    const counters=document.querySelectorAll('.count');
-    counters.forEach(el=>{
-      const target=+el.dataset.count; let cur=0; const step=Math.max(1, Math.floor(target/60));
-      const int=setInterval(()=>{cur+=step; if(cur>=target){cur=target; clearInterval(int);} el.textContent=target===99?cur+'%':target===79?cur+'€':cur;}, 16);
+    function renderStars(n){
+      const full = '★'.repeat(n);
+      const empty = '☆'.repeat(5-n);
+      return `<span class="stars" aria-label="${n} sur 5">${full}${empty}</span>`;
+    }
+
+    function renderReviews(){
+      const list = loadReviews();
+      const root = document.getElementById('reviews');
+      root.innerHTML = '';
+      list.forEach(r => {
+        const el = document.createElement('div');
+        el.className = 'review-item';
+        el.innerHTML = `<div style="display:flex;justify-content:space-between;align-items:center">
+            <strong>${r.name}</strong> ${renderStars(r.rating)}
+          </div>
+          <p class="muted" style="margin-top:6px">${r.comment}</p>`;
+        root.appendChild(el);
+      });
+      updateMeter(list);
+    }
+
+    function updateMeter(list){
+      const avg = list.reduce((a,b)=>a+b.rating,0)/ (list.length||1);
+      const pct = Math.round((avg/5)*100);
+      const bar = document.getElementById('meterbar');
+      const label = document.getElementById('meterlabel');
+      bar.style.width = pct + '%';
+      label.textContent = pct + '%';
+      bar.title = 'Taux calculé: ' + pct + '%';
+    }
+
+    // Submit new review
+    document.getElementById('reviewForm').addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const fd = new FormData(e.target);
+      const name = (fd.get('name')||'').trim();
+      const rating = parseInt(fd.get('rating'),10);
+      const comment = (fd.get('comment')||'').trim();
+      if(!name || !rating || !comment) return;
+      const list = loadReviews();
+      list.push({name, rating, comment});
+      saveReviews(list);
+      e.target.reset();
+      renderReviews();
+      window.scrollTo({top:document.getElementById('satisfaction').offsetTop - 60, behavior:'smooth'});
     });
 
-    // Reviews carousel (auto + dots)
-    const track=document.getElementById('track');
-    const dots=[...document.getElementById('dots').children];
-    let idx=0; const go=(i)=>{idx=(i+dots.length)%dots.length; track.style.transform=`translateX(-${idx*100}%)`; dots.forEach((d,j)=>d.classList.toggle('active', j===idx));}
-    let timer=setInterval(()=>go(idx+1), 4500);
-    dots.forEach((d,i)=>d.addEventListener('click',()=>{go(i); clearInterval(timer); timer=setInterval(()=>go(idx+1), 4500);}));
-
-    // Contact mailto composer
-    const form=document.getElementById('contactForm');
-    form.addEventListener('submit', (e)=>{
+    // Contact: mailto
+    document.getElementById('contactForm').addEventListener('submit', (e)=>{
       e.preventDefault();
-      const fd=new FormData(form);
+      const fd=new FormData(e.target);
       const name=encodeURIComponent(fd.get('name'));
-      const emailField=encodeURIComponent(fd.get('email'));
+      const email=encodeURIComponent(fd.get('email'));
       const phone=encodeURIComponent(fd.get('phone')||'');
       const msg=encodeURIComponent(fd.get('message'));
       const subject=encodeURIComponent('Demande de devis – Kaido Propreté');
-      const body=encodeURIComponent(`Nom: ${name}\nEmail: ${emailField}\nTéléphone: ${phone}\n\nMessage:\n${msg}`);
+      const body=encodeURIComponent(`Nom: ${name}\nEmail: ${email}\nTéléphone: ${phone}\n\nMessage:\n${msg}`);
       window.location.href=`mailto:kaidoproprete@kaido-pro.com?subject=${subject}&body=${body}`;
       document.getElementById('sent').style.display='block';
     });
 
-    // Year
-    document.getElementById('year').textContent = new Date().getFullYear();
+    // Render on load
+    renderReviews();
   </script>
 </body>
 </html>
